@@ -28,7 +28,7 @@ public partial class MainPage : ContentPage
 
     }
 
-    private async void OnRefresh_Click(object sender, EventArgs e)
+    private void OnRefresh_Click(object sender, EventArgs e)
 	{
         tick();
     }
