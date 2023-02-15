@@ -14,7 +14,15 @@ public partial class MainPage : ContentPage
 
 	private async void tick()
 	{
-        var httpResponse = await client.GetAsync("https://api.justyy.workers.dev/api/fortune");
+        HttpResponseMessage httpResponse;
+        try
+        {
+            httpResponse = await client.GetAsync("https://api.justyy.workers.dev/api/fortune");
+        } catch (Exception ex)
+        {
+            lblFortune.Text = ex.Message;
+            return;
+        }
 
         if (httpResponse.IsSuccessStatusCode)
         {
@@ -24,6 +32,9 @@ public partial class MainPage : ContentPage
             s = s.Replace("\\t", "	");
             s = s.Replace("\\\"", "\"");
             lblFortune.Text = s;
+        } else
+        {
+            lblFortune.Text = $"The HTTP status is ${httpResponse.StatusCode}";
         }
 
     }
