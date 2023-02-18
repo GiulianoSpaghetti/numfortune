@@ -5,7 +5,8 @@ namespace numfortune;
 public partial class MainPage : ContentPage
 {
 	HttpClient client;
-	public MainPage()
+    HttpResponseMessage httpResponse;
+    public MainPage()
 	{
 		InitializeComponent();
 		client=new HttpClient();
@@ -14,7 +15,6 @@ public partial class MainPage : ContentPage
 
 	private async void tick()
 	{
-        HttpResponseMessage httpResponse;
         try
         {
             httpResponse = await client.GetAsync("https://api.justyy.workers.dev/api/fortune");
@@ -34,7 +34,7 @@ public partial class MainPage : ContentPage
             lblFortune.Text = s;
         } else
         {
-            lblFortune.Text = $"The HTTP status is ${httpResponse.StatusCode}";
+            lblFortune.Text = $"The HTTP status code is ${httpResponse.StatusCode}";
         }
 
     }
