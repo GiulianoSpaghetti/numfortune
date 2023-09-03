@@ -1,6 +1,6 @@
 # numerone's fortune
 
-Clone dell'app fortune per linux per windows.
+Un fortune teller per android, windows, e GNU/Linux grafico.
 
 # Come ottenerlo
 
