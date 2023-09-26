@@ -6,10 +6,10 @@
     <VerticalStackLayout>
         <Label Text="ⓒ Giulio Sorrentino 2023" />
         <Label Text="Version: 1.0" />
-        <Label Text="A fortune clone app for android" />
+        <Label Text="A fortune teller for android, windows and mac os x" />
         <Label Text="Based on the fortunate app fitortune for fitbit" />
         <Label Text="This software is distrbuited under license GPL 3.0 or, in your humble opinion, any later version" />
-        <Label Text="Dedicato a Francesca Milano, esattamente come l'altra app" />
+        <Label Text="Dedicato a Francesca Milano, che non conosco e con cui non ho nulla a che fare, ma è per scusarmi di come la mia famiglia tratta la sua" />
         <Button Text="More Info" Clicked="OnInfo_Click" />
     </VerticalStackLayout>
 </ContentPage>
