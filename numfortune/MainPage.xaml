@@ -8,7 +8,7 @@
             Spacing="25"
             Padding="30,0"
             VerticalOptions="Center">
-            <Label x:Name="lblFortune" IsEnabled="false" TextType="Html"/>
+            <Editor x:Name="lblFortune" IsEnabled="false" />
             <Button Text="Refresh" Clicked="OnRefresh_Click" />
         </VerticalStackLayout>
     </ScrollView>

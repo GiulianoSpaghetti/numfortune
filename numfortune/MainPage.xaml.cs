@@ -28,7 +28,7 @@ public partial class MainPage : ContentPage
         {
             String s = await httpResponse.Content.ReadAsStringAsync();
             s = s.Substring(1, s.Length - 2);
-            s = s.Replace("\\n", "<br />");
+            s = s.Replace("\\n", System.Environment.NewLine);
             s = s.Replace("\\t", "	");
             s = s.Replace("\\\"", "\"");
             lblFortune.Text = s;
