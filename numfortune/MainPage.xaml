@@ -8,7 +8,7 @@
             Spacing="25"
             Padding="30,0"
             VerticalOptions="Center">
-            <Editor x:Name="lblFortune" IsEnabled="false" />
+            <Editor x:Name="lblFortune" IsReadOnly="True" AutoSize="TextChanges"/>
             <Button Text="Refresh" Clicked="OnRefresh_Click" />
         </VerticalStackLayout>
     </ScrollView>

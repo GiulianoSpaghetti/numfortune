@@ -4,20 +4,19 @@ namespace numfortune;
 
 public partial class MainPage : ContentPage
 {
-	HttpClient client;
+	HttpClient client= new HttpClient();
     HttpResponseMessage httpResponse;
     public MainPage()
-	{
+    {
 		InitializeComponent();
-		client=new HttpClient();
-        tick();
+        	tick();
     }
 
-	private async void tick()
-	{
+    private async void tick()
+    {
         try
         {
-            httpResponse = await client.GetAsync("https://api.justyy.workers.dev/api/fortune");
+            httpResponse = await client.GetAsync("https://helloacm.com/api/fortune/");
         } catch (Exception ex)
         {
             lblFortune.Text = ex.Message;
@@ -37,7 +36,7 @@ public partial class MainPage : ContentPage
             lblFortune.Text = $"The HTTP status code is ${httpResponse.StatusCode}";
         }
 
-    }
+     }
 
     private void OnRefresh_Click(object sender, EventArgs e)
 	{

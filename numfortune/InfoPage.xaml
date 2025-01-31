@@ -4,8 +4,7 @@
              x:Class="numfortune.InfoPage"
              Title="Informations">
     <VerticalStackLayout>
-        <Label Text="ⓒ Giulio Sorrentino 2023" />
-        <Label Text="Version: 1.0" />
+        <Label Text="ⓒ Giulio Sorrentino 2023-2025" />
         <Label Text="A fortune teller for android, windows and mac os x" />
         <Label Text="Based on the fortunate app fitortune for fitbit" />
         <Label Text="This software is distrbuited under license GPL 3.0 or, in your humble opinion, any later version" />

@@ -8,7 +8,7 @@ public partial class InfoPage : ContentPage
 	}
     private async void OnInfo_Click(object sender, EventArgs e)
 	{
-		await Launcher.Default.OpenAsync(new Uri("https://github.com/numerunix/numfortune"));
+		await Launcher.Default.OpenAsync(new Uri("https://github.com/GiulianoSpaghetti/numfortune"));
     }
 
 }
