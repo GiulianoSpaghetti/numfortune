@@ -17,26 +17,32 @@ public partial class MainPage : ContentPage
         try
         {
             httpResponse = await client.GetAsync("https://helloacm.com/api/fortune/");
-        } catch (Exception ex)
+            if (httpResponse.IsSuccessStatusCode)
+            {
+                String s = await httpResponse.Content.ReadAsStringAsync();
+                s = s.Substring(1, s.Length - 2);
+                s = s.Replace("\\n", System.Environment.NewLine);
+                s = s.Replace("\\t", "	");
+                s = s.Replace("\\\"", "\"");
+                lblFortune.Text = s;
+            }
+            else
+            {
+                lblFortune.Text = $"The HTTP status code is ${httpResponse.StatusCode}";
+            }
+        }
+        catch (InvalidOperationException ex)
         {
             lblFortune.Text = ex.Message;
-            return;
+        }
+        catch (AggregateException ex)
+        {
+            lblFortune.Text = ex.Message;
         }
 
-        if (httpResponse.IsSuccessStatusCode)
-        {
-            String s = await httpResponse.Content.ReadAsStringAsync();
-            s = s.Substring(1, s.Length - 2);
-            s = s.Replace("\\n", System.Environment.NewLine);
-            s = s.Replace("\\t", "	");
-            s = s.Replace("\\\"", "\"");
-            lblFortune.Text = s;
-        } else
-        {
-            lblFortune.Text = $"The HTTP status code is ${httpResponse.StatusCode}";
-        }
 
-     }
+
+    }
 
     private void OnRefresh_Click(object sender, EventArgs e)
 	{
