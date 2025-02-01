@@ -20,6 +20,9 @@ Per windows i package msix sono platform indepedent ed in IL, per cui è suffici
 <img width="1431" alt="2025-02-01 (4)" src="https://github.com/user-attachments/assets/8209a20e-fc84-44a7-be7b-bc990085ee3d" />
 
 
+## Bug noti
+
+Ci sono certi caratteri di escape che non vengono correttamente convertiti.
 
 # Donazioni
 
