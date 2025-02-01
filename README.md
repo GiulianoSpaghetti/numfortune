@@ -10,7 +10,7 @@ Un fortune teller per android e windows grafico.
 
 ## Su Windows
 
-Batsa prendere l'msix che più piace dalle release su github, che sono controllate e non contengono virus. Il package msiex è associato ad un certificato .cer che bisogna installare in "Computer locale" > "Persone Attendibili".
+Batsa prendere l'msix che più piace dalle release su github, che sono controllate e non contengono virus. Il package msix è associato ad un certificato .cer che bisogna installare in "Computer locale" > "Persone Attendibili".
 
 Prerequisiti: 
 
@@ -19,6 +19,12 @@ https://winstall.app/apps/Microsoft.DotNet.DesktopRuntime.9
 ## Aggiornamenti
 
 Per windows i package msix sono platform indepedent ed in IL, per cui è sufficiente scaricarsi il nuovo dotnet framework runtime e reinstallarsi il pacchetto per ottenere il codice binario ottimizzato con le ultime patch.
+
+
+## Differenze tra il software maui ed il software avalonia
+
+Il maui ha bisogno di girare in una sandbox, invece avalonia gira coi permessi dell'utente.
+Per cui su windows è meglio usare l'avalonia.
 
 ## Screenshots
 
