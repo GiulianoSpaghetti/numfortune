@@ -12,6 +12,14 @@ Un fortune teller per android e windows grafico.
 
 Per windows i package msix sono platform indepedent ed in IL, per cui è sufficiente scaricarsi il nuovo dotnet framework runtime e reinstallarsi il pacchetto per ottenere il codice binario ottimizzato con le ultime patch.
 
+Prerequisiti: 
+
+https://winstall.app/apps/Microsoft.DotNet.DesktopRuntime.9
+
+## Aggiornamenti
+
+Per windows i package msix sono platform indepedent ed in IL, per cui è sufficiente scaricarsi il nuovo dotnet framework runtime e reinstallarsi il pacchetto per ottenere il codice binario ottimizzato con le ultime patch.
+
 ## Screenshots
 
 <img width="1431" alt="2025-02-01 (7)" src="https://github.com/user-attachments/assets/b912c33c-8ac9-43c7-b8f7-a225342e7952" />
