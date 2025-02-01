@@ -8,9 +8,9 @@ Un fortune teller per android e windows grafico.
 
 [![google](https://play.google.com/intl/it_it/badges/static/images/badges/en_badge_web_generic.png)](https://play.google.com/store/apps/details?id=org.altervista.numerone.numfortune)
 
-## Aggiornamenti
+## Su Windows
 
-Per windows i package msix sono platform indepedent ed in IL, per cui è sufficiente scaricarsi il nuovo dotnet desktop runtime e reinstallarsi il pacchetto per ottenere il codice binario ottimizzato con le ultime patch.
+Batsa prendere l'msix che più piace dalle release su github, che sono controllate e non contengono virus. Il package msiex è associato ad un certificato .cer che bisogna installare in "Computer locale" > "Persone Attendibili".
 
 Prerequisiti: 
 
