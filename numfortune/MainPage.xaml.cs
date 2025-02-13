@@ -23,6 +23,7 @@ public partial class MainPage : ContentPage
                 s = s.Substring(1, s.Length - 2);
                 s = s.Replace("\\n", System.Environment.NewLine);
                 s = s.Replace("\\t", "	");
+                s = s.Replace("\\b", "");
                 s = s.Replace("\\\"", "\"");
                 lblFortune.Text = s;
             }
