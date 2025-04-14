@@ -5,7 +5,8 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:numfortune"
     Shell.FlyoutBehavior="Flyout"
-    FlyoutBackgroundColor="{StaticResource Tertiary}">
+    FlyoutBackgroundColor="{StaticResource Tertiary}"
+    Title="numerone's fortune">
     
 
     <Shell.Resources>
@@ -17,7 +18,7 @@
     </Shell.Resources>
 
     <FlyoutItem FlyoutDisplayOptions="AsMultipleItems" Shell.TabBarIsVisible="False">
-        <ShellContent Title="Application" ContentTemplate="{DataTemplate local:MainPage}" Route="Main"/>
+        <ShellContent Title="numerone's fortune" ContentTemplate="{DataTemplate local:MainPage}" Route="Main"/>
         <ShellContent Title="Informations" ContentTemplate="{DataTemplate local:InfoPage}" Route="Informazioni"/>
     </FlyoutItem>
 

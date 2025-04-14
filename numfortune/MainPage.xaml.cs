@@ -4,8 +4,8 @@ namespace numfortune;
 
 public partial class MainPage : ContentPage
 {
-	HttpClient client= new HttpClient();
-    HttpResponseMessage httpResponse;
+	private HttpClient client= new HttpClient();
+    private HttpResponseMessage httpResponse;
     public MainPage()
     {
 		InitializeComponent();
