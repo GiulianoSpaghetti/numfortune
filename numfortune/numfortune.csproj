@@ -50,6 +50,7 @@
 		<HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
 		<AppInstallerUri>https://github.com/GiulianoSpaghetti/numfortune/releases/download/2.2.1/numfortune_x64.msix</AppInstallerUri>
 		<GenerateTemporaryStoreCertificate>True</GenerateTemporaryStoreCertificate>
+		<PlatformTarget>x64</PlatformTarget>
 	</PropertyGroup>
 
 	<ItemGroup>

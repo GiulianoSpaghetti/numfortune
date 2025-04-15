@@ -40,7 +40,14 @@ public partial class MainPage : ContentPage
         {
             lblFortune.Text = ex.Message;
         }
-
+        catch (System.Net.Http.HttpRequestException ex)
+        {
+            lblFortune.Text = ex.Message;
+        }
+        catch (System.Net.Sockets.SocketException ex)
+        {
+            lblFortune.Text = ex.Message;
+        }
 
 
     }
