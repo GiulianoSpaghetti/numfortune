@@ -1,6 +1,4 @@
-﻿using System.Collections.ObjectModel;
-
-namespace numfortune;
+﻿namespace numfortune;
 
 public partial class MainPage : ContentPage
 {
