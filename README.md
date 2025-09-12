@@ -1,6 +1,7 @@
 # numerone's fortune
 
 Un fortune teller per android e windows grafico.
+Best usaed on surface 11.
 
 ## Come installare
 
