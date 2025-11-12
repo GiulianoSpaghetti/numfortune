@@ -1,7 +1,8 @@
 # numerone's fortune
 
 Un fortune teller per android e windows grafico.
-Best usaed on surface 11.
+Il primo software per android 16
+Best used on surface 11.
 
 ## Come installare
 
