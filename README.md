@@ -43,7 +43,7 @@ Per cui su windows è meglio usare l'avalonia.
 
 ## Bug noti
 
-Ci sono certi caratteri di escape che non vengono correttamente convertiti.
+Ci sono certi caratteri di escape che non vengono correttamente convertiti. Per questo è possibiole copiarsi il cookie con gli * e cambiarli nella relativa casella di testo dopo aver incollato la frase parzialmente scoperta.
 
 # Donazioni
 
