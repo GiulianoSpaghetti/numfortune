@@ -1,6 +1,7 @@
 # numerone's fortune
 
 Un fortune teller per android e windows grafico.
+SI basa su gelloacm.com per avere gli aforismi.
 
 Il primo software per android 16
 
