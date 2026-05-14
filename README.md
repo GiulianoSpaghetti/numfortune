@@ -3,7 +3,8 @@
 Un fortune teller per android e windows grafico.
 SI basa su helloacm.com per avere gli aforismi.
 
-Il primo software per android 16
+Il primo software per android 16.
+Il primo software in maui 11 per windows 26h1.
 
 Best used on surface 11.
 
