@@ -1,7 +1,9 @@
+[![.NET MAUI Build](https://github.com/GiulianoSpaghetti/numfortune/actions/workflows/dotnet-desktop.yml/badge.svg)](https://github.com/GiulianoSpaghetti/numfortune/actions/workflows/dotnet-desktop.yml)
+
 # numerone's fortune
 
 Un fortune teller per android e windows grafico.
-SI basa su helloacm.com per avere gli aforismi.
+Si basa su helloacm.com per avere gli aforismi.
 
 Il primo software per android 16.
 
