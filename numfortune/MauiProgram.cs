@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using CommunityToolkit.Maui;
+using Microsoft.Extensions.Logging;
 
 namespace numfortune
 {
@@ -8,7 +9,13 @@ namespace numfortune
         {
             var builder = MauiApp.CreateBuilder();
             builder
-                .UseMauiApp<App>()
+                .UseMauiApp<App>().UseMauiCommunityToolkit(static options =>
+                {
+                    options.SetShouldEnableSnackbarOnWindows(true);
+                    options.SetShouldSuppressExceptionsInConverters(true);
+                    options.SetShouldSuppressExceptionsInBehaviors(true);
+                    options.SetShouldSuppressExceptionsInAnimations(true);
+                })
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");

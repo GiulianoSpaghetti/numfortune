@@ -1,4 +1,6 @@
-﻿namespace numfortune;
+﻿using CommunityToolkit.Maui.Alerts;
+
+namespace numfortune;
 
 public partial class MainPage : ContentPage
 {
@@ -27,24 +29,25 @@ public partial class MainPage : ContentPage
             }
             else
             {
-                lblFortune.Text = $"The HTTP status code is ${httpResponse.StatusCode}";
+                Snackbar.Make($"The HTTP status code is ${httpResponse.StatusCode}").Show(App.cancellationTokenSource.Token);
+
             }
         }
         catch (InvalidOperationException ex)
         {
-            lblFortune.Text = ex.Message;
+            Snackbar.Make(ex.Message).Show(App.cancellationTokenSource.Token);
         }
         catch (AggregateException ex)
         {
-            lblFortune.Text = ex.Message;
+            Snackbar.Make(ex.Message).Show(App.cancellationTokenSource.Token);
         }
         catch (System.Net.Http.HttpRequestException ex)
         {
-            lblFortune.Text = ex.Message;
+            Snackbar.Make(ex.Message).Show(App.cancellationTokenSource.Token);
         }
         catch (System.Net.Sockets.SocketException ex)
         {
-            lblFortune.Text = ex.Message;
+            Snackbar.Make(ex.Message).Show(App.cancellationTokenSource.Token);
         }
 
 
