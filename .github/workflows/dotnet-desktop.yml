@@ -14,7 +14,7 @@ jobs:
         configuration: [Release]
 
     env:
-      Solution_Name: numfortune.slnx
+      Solution_Name: numfortune.sln
       Configuration: ${{ matrix.configuration }}
 
     steps:
@@ -42,7 +42,7 @@ jobs:
       run: dotnet workload install maui
 
     - name: Restore packages
-      run: dotnet restore numfortune.slnx
+      run: dotnet restore numfortune.sln
 
     - name: Build MAUI MSIX
       run: |
