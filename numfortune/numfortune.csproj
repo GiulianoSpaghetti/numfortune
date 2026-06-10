@@ -77,7 +77,7 @@
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="11.0.0-preview.5.26302.115" />
 	</ItemGroup>
 
-	<ItemGroup Condition="'$(TargetFramework)' == 'net10.0-windows10.0.26100.0'">
+	<ItemGroup Condition="'$(TargetFramework)' == 'net11.0-windows10.0.26100.0'">
 		<PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.28000.1721" />
 		<PackageReference Include="Microsoft.Windows.SDK.BuildTools.MSIX" Version="1.7.260316102">
 			<PrivateAssets>all</PrivateAssets>
