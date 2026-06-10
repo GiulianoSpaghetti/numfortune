@@ -26,8 +26,9 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: 10.0.x
-
+        dotnet-version: 11.0.x
+        dotnet-quality: 'preview'
+        
     - name: Import PFX certificate
       run: |
         $pfx_password = ConvertTo-SecureString "${{ secrets.PFX_KEY }}" -AsPlainText -Force
