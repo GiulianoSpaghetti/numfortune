@@ -12,11 +12,10 @@ jobs:
     strategy:
       matrix:
         configuration: [Release]
-
     env:
-      Solution_Name: numfortune.slnx
+      Solution_Name: numfortune
       Configuration: ${{ matrix.configuration }}
-
+      Architecture: win-x64
     steps:
     - name: Checkout
       uses: actions/checkout@v6
@@ -42,18 +41,24 @@ jobs:
     - name: Install MAUI Workload
       run: dotnet workload install maui
 
+    - name: Set SOLUTION
+      run: set-env name=SOLUTION::${{ env.Solution_Name }}.slnx
+
     - name: Restore packages
-      run: dotnet restore numfortune.slnx -r win-arm64
+      run: dotnet restore $SOLUTION -r $env:Architecture
+
+    - name: Set MYPATH
+      run: set-env name=MYPATH::${{ env.Solution_Name }}/${{ env.Solution_Name }}.csproj
 
     - name: Build MAUI MSIX
       run: |
-        dotnet publish numfortune/numfortune.csproj -f net11.0-windows10.0.26100.0 -c $env:Configuration -r win-arm64
+        dotnet publish $MYPATH -f net11.0-windows10.0.26100.0 -c $env:Configuration -r $env:Architecture
       shell: pwsh
 
     - name: Upload MSIX artifact
       uses: actions/upload-artifact@v7
       with:
         name: MSIX
-        path: numfortune/AppPackages/
+        path: $env:Solution_Name/AppPackages/
         include-hidden-files: true
         if-no-files-found: error
