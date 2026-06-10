@@ -16,8 +16,6 @@ jobs:
       Solution_Name: numfortune
       Configuration: ${{ matrix.configuration }}
       Architecture: win-x64
-      SOLUTION: dummy
-      MYPATH: dummy
     steps:
     - name: Checkout
       uses: actions/checkout@v6
@@ -43,18 +41,12 @@ jobs:
     - name: Install MAUI Workload
       run: dotnet workload install maui
 
-    - name: Set SOLUTION
-      run: echo::set-env name=SOLUTION::${{ env.Solution_Name }}.slnx
-
     - name: Restore packages
-      run: dotnet restore $SOLUTION -r $env:Architecture
-
-    - name: Set MYPATH
-      run: echo::set-env name=MYPATH::${{ env.Solution_Name }}/${{ env.Solution_Name }}.csproj
+      run: dotnet restore {{ env:Solution_Name }}.slnx -r $env:Architecture
 
     - name: Build MAUI MSIX
       run: |
-        dotnet publish $MYPATH -f net11.0-windows10.0.26100.0 -c $env:Configuration -r $env:Architecture
+        dotnet publish ${{ env.Solution_Name }}/${{ env.Solution_Name }}.csproj -f net11.0-windows10.0.26100.0 -c $env:Configuration -r $env:Architecture
       shell: pwsh
 
     - name: Upload MSIX artifact
