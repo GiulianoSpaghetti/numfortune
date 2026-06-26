@@ -8,7 +8,7 @@
     xmlns:desktop="http://schemas.microsoft.com/appx/manifest/desktop/windows10"
     IgnorableNamespaces="uap rescap com desktop">
 
-  <Identity Name="21961GiulioSorrentino.numeronesfortuneinmaui" Publisher="CN=Giulio Sorrentino, O=numeronesoft, C=IT" Version="2.4.2.0" />
+  <Identity Name="21961GiulioSorrentino.numeronesfortuneinmaui" Publisher="CN=Giulio Sorrentino, O=numeronesoft, C=IT" Version="2.4.3.0" />
 
   <mp:PhoneIdentity PhoneProductId="73dae7da-55c4-48ea-8bfe-04f741c4eb26" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
