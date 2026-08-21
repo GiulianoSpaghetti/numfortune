@@ -21,6 +21,12 @@ Best used on surface 11.
 
 Batsa prendere l'msix che più piace dalle release su github, che sono controllate e non contengono virus. Il package msix è associato ad un certificato .cer che bisogna installare in "Computer locale" > "Persone Attendibili".
 
+Per ottenere gli aggiornamenti, è attivo il mio server winget, visto che il repository ufficiale di winget si rifiuta di risiglarmi i pacchetti, e funziona a patto di tenere il mio certificato, non quello dello store, installato.
+
+        https://numeronesoft.ddns.net/api/net11
+
+[Video di presentazione del repository winget](https://youtu.be/HXUkuqLNmEw?si=bJEBIfietVllBS3K)
+
 Prerequisiti: 
 
 #### Windows
