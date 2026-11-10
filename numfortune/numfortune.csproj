@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>net10.0-windows10.0.26100.0</TargetFrameworks>
+		<TargetFrameworks>net10.0-windows11.0.26100.0</TargetFrameworks>
 
 		<!-- Note for MacCatalyst:
 		The default runtime is maccatalyst-x64, except in Release config, in which case the default is maccatalyst-x64;maccatalyst-arm64.
@@ -71,11 +71,11 @@
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
 	</ItemGroup>
 	<ItemGroup>
-		<PackageReference Include="CommunityToolkit.Maui" Version="15.0.1" />
-		<PackageReference Include="Microsoft.Maui.Controls" Version="10.0.120" />
-		<PackageReference Include="Microsoft.Maui.Essentials" Version="10.0.120" />
-		<PackageReference Include="Microsoft.NET.ILLink.Tasks" Version="10.0.14" />
-	</ItemGroup>
+		<PackageReference Include="CommunityToolkit.Maui" Version="16.0.0" />
+		<PackageReference Include="Microsoft.Maui.Controls" Version="11.0.0" />
+		<PackageReference Include="Microsoft.Maui.Essentials" Version="11.0.0" />
+		<PackageReference Include="Microsoft.NET.ILLink.Tasks" Version="11.0.0" />
+    </ItemGroup>
 	<ItemGroup Condition="'$(TargetFramework)' == 'net10.0-windows10.0.26100.0'">
 		<PackageReference Include="Microsoft.WindowsAppSDK" Version="2.5.1" />
 		<PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.28000.2705" />
